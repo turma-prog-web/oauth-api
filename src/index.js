@@ -1,9 +1,9 @@
 const express = require('express');
 const passportLib = require('passport');
-const { buildOAuthPassportApplication } = require('./auth/index');
+const { buildOAuthApi } = require('./auth');
 
-
-const app = express();
-const passport = buildOAuthPassportApplication(passportLib);
+const { app, passport }  = buildOAuthApi(express(), passportLib);
 
 app.use(passport.initialize());
+
+app.listen(3000)

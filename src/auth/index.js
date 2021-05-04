@@ -1,3 +1,3 @@
-const { buildOAuthPassportApplication } = require("./factory");
+const { buildOAuthApi } = require("./factory");
 
-module.exports = { buildOAuthPassportApplication }
+module.exports = { buildOAuthApi }
