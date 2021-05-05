@@ -14,8 +14,8 @@ const authenticate = (req, res) => {
 const handlerUserInformations = (user) => ({
     name: user.provider == "github" ? user.username : user.displayName,
     code: user.id,
-    email: user.emails ? user.emails[0].value : "",
-    picture: user.photos[0].value,
+    email: user?.emails[0]?.value || '',
+    picture: user.photos[0]?.value,
     active: true
 })
 

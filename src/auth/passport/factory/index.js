@@ -23,6 +23,7 @@ const implementsStrategyOnPassport = (passport, oAuthCallback) => (
 const buildOAuthPassportApplication = (passportLib) => {
     const {passport, oAuthCallback} = getPassport(passportLib);
     const strategiesOptions = Object.entries(ALLOWED_STRATEGIES)
+        .filter(([_, { isEnabled }]) =>  isEnabled)
         .map(implementsStrategyOnPassport(passport, oAuthCallback));
     return { passport, strategiesOptions };
 }
