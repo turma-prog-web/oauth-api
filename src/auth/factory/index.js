@@ -9,9 +9,9 @@ const initalizePassport = (app, passport) => {
 }
 
 const buildOAuthApi = (expressAplication, passportLib) => {
-    const { app, passport } = initalizePassport(expressAplication, passportLib);
+    const { app , passport } = initalizePassport(expressAplication, passportLib);
     const passportOptions = buildOAuthPassportApplication(passport);
-    return initializeOAuthRoutes(expressAplication, passportOptions, controller);
+    return initializeOAuthRoutes(app, passportOptions, controller);
 }
 
 module.exports = { buildOAuthApi }
