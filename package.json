@@ -4,7 +4,8 @@
   "description": "oauth-api",
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon ./src/index.js"
+    "start:dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
   },
   "author": "",
   "license": "ISC",
