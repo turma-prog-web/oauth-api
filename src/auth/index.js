@@ -1,3 +1,3 @@
-const { buildOAuthApi } = require("./factory");
+const { buildOAuthApi } = require('./factory');
 
-module.exports = { buildOAuthApi }
+module.exports = { buildOAuthApi };

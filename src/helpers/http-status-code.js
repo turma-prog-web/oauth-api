@@ -1,4 +1,4 @@
 module.exports = {
-    SUCCESS:200,
-    PRECONDITION_FAILED:412,
-}
+  SUCCESS: 200,
+  PRECONDITION_FAILED: 412,
+};
