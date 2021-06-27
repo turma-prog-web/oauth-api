@@ -9,7 +9,7 @@ const ALLOWED_STRATEGIES = {
   GOOGLE: {
     Strategy: GoogleStrategy,
     options: { scope: ['profile', 'email'], session: false },
-    isEnabled: false,
+    isEnabled: true,
   },
   GITHUB: {
     Strategy: GitHubStrategy,
